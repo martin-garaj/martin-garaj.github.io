@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Figure plots for Journal publishing"
+excerpt: "A library for journal-level data plotting. The library comes with examples and pre-defined styles. 1<br/><img src='/images/repo_image_journal_figure.jpg'>"
 collection: portfolio
 ---
 
