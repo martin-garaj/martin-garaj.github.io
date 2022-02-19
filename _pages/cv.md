@@ -12,9 +12,10 @@ redirect_from:
 
 Education
 ======
-* B.Sc. in Mechatronics, Brno University of Technology, 2014
-* M.Sc. in Mechatronics, University of Souther Denmark, 2016
 * Ph.D. in Electrical Engineering, City University of Hong Kong, 2022 (expected)
+* M.Sc. in Mechatronics, University of Souther Denmark, 2016
+* B.Sc. in Mechatronics, Brno University of Technology, 2014
+
 
 Work experience
 ======
