@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "brief CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -18,13 +18,13 @@ Education
 
 Work experience
 ======
-* Summer 2017: Research Assistant
+* 2017: Research Assistant
   * City University of Hong Kong
-  * Project: Working on acceleration of heuristic search algorithm using FPGA-SoC platform.
+  * Goal: Acceleration of heuristic search algorithms using FPGA-SoC platform.
 
-* Fall 2021: Data Analytist
+* 2021: Data Analyst
   * SolarGIS
-  * Project: Detection of anomalies related to 1-axis and 2-axis trackers from irradiation data.
+  * Goal: Detection of anomalies related to 1-axis and 2-axis trackers from irradiation data.
   
 Skills
 ======
@@ -42,4 +42,6 @@ Publications
   
 Service and leadership
 ======
-* Hackatons, CyberPort Business competition, Nexteria mentor and group leader,
+* Mentor and Group leader in Nexteria
+* CyberPort Business competition
+* Hackatons

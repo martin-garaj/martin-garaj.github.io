@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Martin Garaj Ph.D."
+title                    : "Martin Garaj"
 title_separator          : "-"
 name                     : &name "Martin"
 description              : &description "personal description"
@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : #&twitter
 facebook:
   username               :
   app_id                 :
@@ -88,8 +88,8 @@ author:
   pubmed           :
   googlescholar    : 
   email            :
-  researchgate     :  "https://www.researchgate.net/profile/Martin-Garaj"
-  uri              : "www.martin-garaj.com"
+  researchgate     : "https://www.researchgate.net/profile/Martin-Garaj"
+  uri              : 
   bitbucket        :
   codepen          :
   dribbble         :
