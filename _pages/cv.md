@@ -18,14 +18,15 @@ Education
 
 Work experience
 ======
-* 2017: Research Assistant
-  * City University of Hong Kong
-  * Goal: Acceleration of heuristic search algorithms using FPGA-SoC platform.
-
 * 2021: Data Analyst
   * SolarGIS
   * Goal: Detection of anomalies related to 1-axis and 2-axis trackers from irradiation data.
   
+  
+* 2017: Research Assistant
+  * City University of Hong Kong
+  * Goal: Acceleration of heuristic search algorithms using FPGA-SoC platform.
+
 Skills
 ======
 * strong background in mechanics, electroncis and data science

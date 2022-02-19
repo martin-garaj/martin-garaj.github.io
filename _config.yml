@@ -80,14 +80,14 @@ analytics:
 
 # Site Author
 author:
-  name             : "Martin Garaj"
+  name             : "Martin Garaj Ph.D."
   avatar           : "profile.png"
   bio              : "Researcher interested in Data Analytics, ML and Renewable Energy"
   location         : "Hong Kong"
   employer         :
   pubmed           :
   googlescholar    : 
-  email            :
+  email            : "garaj.martin@gmail.com"
   researchgate     : "https://www.researchgate.net/profile/Martin-Garaj"
   uri              : 
   bitbucket        :
@@ -96,13 +96,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/martin-garaj"
+  github           : "martin-garaj"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : 
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/martin-garaj/"
+  linkedin         : "martin-garaj"
   orcid            : "https://orcid.org/my-orcid?orcid=0000-0003-0775-9899"
   pinterest        :
   soundcloud       :
