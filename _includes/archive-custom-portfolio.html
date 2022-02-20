@@ -55,11 +55,11 @@
     {% if post.image %}
     	{% if post.link %}
     	<a href="{{ post.link }}" style="display:flex;justify-content:center;align-items:center;overflow:hidden;">
-    		<img src="{{ post.image }}" style="max-width:80%;max-height:10em;object-fit:cover;">
+    		<img src="{{ post.image }}" style="max-width:80%;max-height:10em;object-fit:contain;">
     	</a>
     	{% else %}
     	<a href={{ base_path }}{{ post.url }} style="display:flex;justify-content:center;align-items:center;overflow:hidden;">
-    		<img src="{{ post.image }}"style="max-width:80%;max-height:10em;object-fit:cover;">
+    		<img src="{{ post.image }}"style="max-width:80%;max-height:10em;object-fit:contain;">
     	</a>
     	{% endif %}
     {% endif %}
