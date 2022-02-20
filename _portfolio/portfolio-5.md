@@ -5,7 +5,7 @@ excerpt: "Dataset detailing the effect of cracks, interconnect failures and Pote
 collection: portfolio
 ---
 
-A well curated dataset of more than 2804 I-V characteristics of PV cells in reference and degraded state (cracks, interconnect failures and polarized/shunt Potential-Induced-Degradation). The dataset is available through [Mendeley Data](https://data.mendeley.com/datasets/vxj8bkkfkg).
+A well curated dataset of more than **900** unique I-V characteristics (accompanied by Electroluminecsent images) of PV cells in reference and degraded state (cracks, interconnect failures and polarized/shunt Potential-Induced-Degradation). The dataset is available through [Mendeley Data](https://data.mendeley.com/datasets/vxj8bkkfkg).
 
 The following figure illustrates the cross-section of manufactured single-cell laminates:
 ![Dataset_IV_EL_samples](/images/Dataset_IV_EL_samples.png)
