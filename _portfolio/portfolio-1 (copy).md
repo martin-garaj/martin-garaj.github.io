@@ -1,5 +1,6 @@
 ---
 title: "Figure plots for Journal publishing"
+link: 'https://github.com/martin-garaj/journal_figure'
 excerpt: "A library for journal plotting. The library comes with examples and predefined styles. <br/><img src='https://github.com/martin-garaj/journal_figure/raw/main/graphics/example_figure.png'>"
 collection: portfolio
 ---
