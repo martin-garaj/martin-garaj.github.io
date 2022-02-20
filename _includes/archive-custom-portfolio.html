@@ -54,15 +54,18 @@
     
     {% if post.image %}
     	{% if post.link %}
-    	<a href="{{ post.link }}" style="display:flex;justify-content:center;align-items:center;overflow:hidden;">
-    		<img src="{{ post.image }}" style="max-width:80%;max-height:80%;object-fit:contain;">
+    	<a href="{{ post.link }}" style="display:flex;justify-content:center;align-items:center;">
+    		<img src="{{ post.image }}" style="width:80vh;height: 40vh;object-position: 0vh 0vh;object-fit:cover;">
     	</a>
     	{% else %}
-    	<a href={{ base_path }}{{ post.url }} style="display:flex;justify-content:center;align-items:center;overflow:hidden;">
-    		<img src="{{ post.image }}"style="max-width:80%;max-height:80%;object-fit:contain;">
+    	<a href={{ base_path }}{{ post.url }} style="display:flex;justify-content:center;align-items:center;">
+    		<img src="{{ post.image }}"style="width:80vh;height: 40vh;object-position: 0vh 0vh;object-fit:cover;">
     	</a>
     	{% endif %}
     {% endif %}
+    width:80vh;height: 40vh;object-position: 0vh 0vh;object-fit:cover; 
+
+
 
     {% if post.citation and post.paperurl %}
       <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}"><u>{{ post.paperurl }}</u></a></p>
