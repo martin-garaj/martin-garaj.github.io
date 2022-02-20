@@ -1,6 +1,6 @@
 ---
 title: "Dataset of I-V characterization and EL imaging for accelerated testing of monofacial and bifacial PV cells"
-image: 'Dataset_IV_EL_samples.png'
+image: '/images/Dataset_IV_EL_front_image.png'
 excerpt: "Dataset detailing the effect of cracks, interconnect failures and Potential-Induced-Degradation (polarized and shunt PID) on performance of monofacial and bifacial PV cells."
 collection: portfolio
 ---
