@@ -1,0 +1,16 @@
+---
+title: "Dataset of I-V characterization and EL imaging for accelerated testing of monofacial and bifacial PV cells"
+image: 'Dataset_IV_EL_samples.png'
+excerpt: "Dataset detailing the effect of cracks, interconnect failures and Potential-Induced-Degradation (polarized and shunt PID) on performance of monofacial and bifacial PV cells."
+collection: portfolio
+---
+
+A well curated dataset of more than 2804 I-V characteristics of PV cells in reference and degraded state (cracks, interconnect failures and polarized/shunt Potential-Induced-Degradation). The dataset is available through [Mendeley Data](https://data.mendeley.com/datasets/vxj8bkkfkg).
+
+The following figure illustrates the cross-section of manufactured single-cell laminates:
+![Dataset_IV_EL_samples](/images/Dataset_IV_EL_samples.png)
+
+The I-V characteristics were measured by a custom measurement hardware, control software is available in [PV-4-wire repository](https://github.com/martin-garaj/PV-4-wire).
+
+Documents describing the dataset and the measurement setup will be available after publication.
+
