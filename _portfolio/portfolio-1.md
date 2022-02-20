@@ -1,6 +1,8 @@
 ---
 title: "Figure plots for Journal publishing"
-excerpt: "A library for journal plotting. The library comes with examples and predefined styles. <br/><img src='https://github.com/martin-garaj/journal_figure/raw/main/graphics/example_figure.png' width='90%'>"
+link: 'https://github.com/martin-garaj/journal_figure'
+excerpt: "Python library based on matplotlib for nice plotting. The library comes with examples and predefined styles. 
+<br/><img src='https://github.com/martin-garaj/journal_figure/raw/main/graphics/example_figure.png' style='max-width: 80%'>"
 collection: portfolio
 ---
 
