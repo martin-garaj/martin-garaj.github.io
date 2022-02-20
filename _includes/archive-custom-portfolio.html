@@ -55,11 +55,11 @@
     {% if post.image %}
     	{% if post.link %}
     	<a href="{{ post.link }}" style="display:flex;justify-content:center;align-items:center">
-    		<img src="{{ post.image }}" style='max-width: 70%'>
+    		<img src="{{ post.image }}" style="max-width:80%;height:75vh;overflow:hidden">
     	</a>
     	{% else %}
     	<a href={{ base_path }}{{ post.url }} style="display:flex;justify-content:center;align-items:center">
-    		<img src="{{ post.image }}" style='max-width: 70%'>
+    		<img src="{{ post.image }}"style="max-width:80%;height:75vh;overflow:hidden">
     	</a>
     	{% endif %}
     {% endif %}
