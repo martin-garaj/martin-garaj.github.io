@@ -56,7 +56,7 @@
     	{% if post.link %}
     	<a href="{{ post.link }}" style="display:flex;justify-content:center;align-items:center;"><img src="{{ post.image }}" style="width: 80vh;height: 40vh;object-position: 0vh 0vh;object-fit:cover;"></a>
     	{% else %}
-    	<a href={{ base_path }}{{ post.url }} style="display:flex;justify-content:center;align-items:center;"><img src="{{ post.image }}" style="width: 80vh;height: 40vh;object-position: 0vh 0vh;object-fit:cover;"></a>
+    	<a href={{ base_path }}{{ post.url }} rel="permalink" style="display:flex;justify-content:center;align-items:center;"><img src="{{ post.image }}" style="width: 80vh;height: 40vh;object-position: 0vh 0vh;object-fit:cover;"></a>
     	{% endif %}
     {% endif %}
 
