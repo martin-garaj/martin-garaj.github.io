@@ -6,7 +6,7 @@ tags:
   - ML
   - book review
 ---
-![Book available here](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf)
+[Book available here](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf)
 
 Virtually every proper university course relies on teaching convex optimization using this book. 
 Despite that, it is not an easy book for a self-study. I have been through this book with the help 
