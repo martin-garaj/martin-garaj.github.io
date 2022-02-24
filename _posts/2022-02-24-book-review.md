@@ -1,7 +1,7 @@
 ---
 title: 'Book review: Convex Optimization (Stephen Boyd, Lieven Vandenberghe)'
 date: 2022-02-24
-permalink: /posts/2022/02/post/
+permalink: /posts/2022/02/24/book-review/
 tags:
   - ML
   - book review
