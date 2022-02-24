@@ -1,6 +1,6 @@
 ---
 title: 'Book review: Fundamentals of Linear Algebra and Optimization for CIS515, Some Slides (Jean Gallier)'
-date: 2022-02-23
+date: 2021-12-05
 permalink: /posts/2021/12/05/book-review/
 tags:
   - ML
