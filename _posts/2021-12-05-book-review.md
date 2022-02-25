@@ -14,7 +14,6 @@ introduce the reader to the mathematical notation. Therefore, the notes do not i
 To cope with the lack of illustrations, I would suggest to follow 3Blue1Brown on Yutube ([3Blue1Brown: Linear Alg](https://www.youtube.com/watch?v=kjBOesZCoqc&list=PL0-GT3co4r2y2YErbmuJw2L5tW4Ew2O5B)),
 who provides superior illustrations and simple-to-understand explanations.
 
-
 ### Strengths
 1. Very well written text introducing the reader to basic concepts
 2. Covers the less interesting aspects, which are often omitted in most of the books
