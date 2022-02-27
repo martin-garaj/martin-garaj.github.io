@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "Briefly on my professional path"
-excerpt: "About me"
+title: "About me"
+excerpt: "A brief introduction into my professional path and heading."
 author_profile: true
 redirect_from: 
   - /about/
