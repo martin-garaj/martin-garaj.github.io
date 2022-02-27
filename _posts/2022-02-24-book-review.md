@@ -10,7 +10,8 @@ tags:
 
 Virtually every university course teaching convex optimization relies on this book. 
 Despite that, it is not an easy book for a self-study. I have been through this book with the help 
-of Prof. Chuan WU from Hong Kong University, lecturer and course leader for convex optimizatio course. 
+of [Prof. Chuan WU](https://i.cs.hku.hk/~cwu/index.html) from Hong Kong University, 
+lecturer and course leader for convex optimizatio course. 
 The course generally covered the chapter 3, 4, 5, 9, 10 and 11.
 
 ### Strengths
