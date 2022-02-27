@@ -22,5 +22,5 @@ who provides superior illustrations and simple-to-understand explanations.
 ### Weaknesses
 1. Linear algebra can be nicely visualized, therefore the lack of illustrations accompanying the text is pity
 
-### Verdict
+### Conclusion
 Covers the basic concepts of linear algebra with are fundamental for anyone going into ML.

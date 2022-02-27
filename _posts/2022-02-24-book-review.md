@@ -14,12 +14,12 @@ of Prof. Chuan WU from Hong Kong University, lecturer and course leader for conv
 The course generally covered the chapter 3, 4, 5, 9, 10 and 11.
 
 ### Strengths
-1. Covering introductory and advanced concepts
+1. Covering introductory and advanced concepts of convex optimization
 2. Well structured (easy to navigate and easy to use as a reference book)
 3. Reader-friendly mathematical notation
 
 ### Weaknesses
 1. The book is not necessarily beginner-friendly for self-study audience
 
-### Verdict
+### Conclusion
 A must-have in every engineers bookshelf as a reference book for convex problems.
