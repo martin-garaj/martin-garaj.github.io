@@ -6,7 +6,7 @@ tags:
   - ML
   - book review
 ---
-[Notes available here](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf)
+[Book available here](https://www.microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf)
 
 This is a staple material for studying ML. The mathematical notation, illustrations and friendly appraoch is excellent for people studying ML. 
 I was lucky to have [Prof. Antoni Bert CHAN](https://scholar.google.com.hk/citations?user=j4vFSn8AAAAJ) as my tutor who made reading the book 
