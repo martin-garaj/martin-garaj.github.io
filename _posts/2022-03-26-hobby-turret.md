@@ -23,13 +23,19 @@ first place (except its own axis).
 To explain the name fully, the word "turret" refers to the rotation capability, and I hope to come
 up with some cool acronym later, such as:
 
-`T`inkerer's   \n
-`U`niversal   \n
-`R`otating   \n
-`R`obot   \n
-(with)   \n
-`E`ffective   \n
-`T`echnique for cable managenemnt   \n
+`T`inkerer's
+
+`U`niversal
+
+`R`otating
+
+`R`obot
+
+(with)
+
+`E`ffective
+
+`T`echnique for cable managenemnt
   
 
 *P.S. You are very welcome to contribute to this project with better acronym.*
