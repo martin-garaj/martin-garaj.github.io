@@ -35,17 +35,17 @@ up with some cool acronym later, such as:
 *P.S. You are very welcome to contribute to this project with better acronym.*
 
 ## Progress
-- [x] Decide of-the-shelf parts to settle on dimensions
-- [x] get mechanical parts (6810 bearings and M3 screws)
-- [x] design the first prototype of the "wheel"
-- [x] 3D print the "wheel"
-- [ ] design the base-plate which holds everything together
-- [ ] design multi-axis mechanism 
-- [ ] 3D print everything from correct material
-- [ ] pick proper NEMA17 stepper motors (with proper torque)
-- [ ] get timing pulley and timing belt (preferably 10mm wide)
-- [ ] get stepper motor drivers (based on TMC2209)
-- [ ] get arduino with CNC shield 
+- [x]  decide of-the-shelf parts to settle on dimensions
+- [x]  get mechanical parts (6810 bearings and M3 screws)
+- [x]  design the first prototype of the "wheel"
+- [x]  3D print the "wheel"
+- [ ]  design the base-plate which holds everything together
+- [ ]  design multi-axis mechanism 
+- [ ]  3D print everything from correct material
+- [ ]  pick proper NEMA17 stepper motors (with proper torque)
+- [ ]  get timing pulley and timing belt (preferably 10mm wide)
+- [ ]  get stepper motor drivers (based on TMC2209)
+- [ ]  get arduino with CNC shield 
 
 
 ## "Napkin" inception of hollow shaft
