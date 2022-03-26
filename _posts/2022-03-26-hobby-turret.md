@@ -22,6 +22,7 @@ first place (except its own axis).
 
 To explain the name fully, the word "turret" refers to the rotation capability, and I hope to come
 up with some cool acronym later, such as:
+
   \n`T`inkerer's  
   \n`U`niversal  
   \n`R`otating  
@@ -65,15 +66,15 @@ The visit yielded a **bearing 6810**, a deep grove radial bearing. As I remember
 these bearings can take a radial torque and radial pressure without any problem. The dimensions of the bearings are below:
 
 ![6810_dimensions](/images/blog/hobby_turret/6810_dimensions.jpg)
-D = 65 [mm]
-d = 50 [mm]
+D = 65 [mm]  \n
+d = 50 [mm]  \n
 B = 7 [mm]
 
 The NEMA17 is a ctually a family of stepper motors, but this one seems particularly well built for the task in hand,
 the **NEMA17 42CM08** shown below, has torque of 0.8 [Nm] and can be controlled with 1.5 [A] (max 2.5 [A]), which is 
 exactly what the TMC2209 can handle without any problems. 
 
-![6810_dimensions](/images/blog/hobby_turret/NEMA17_42CM08.png)
+![NEMA17_42CM08](/images/blog/hobby_turret/NEMA17_42CM08.png)
 
 
 ## First prototype
