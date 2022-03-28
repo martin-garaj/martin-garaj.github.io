@@ -23,19 +23,17 @@ first place (except its own axis).
 To explain the name fully, the word "turret" refers to the rotation capability, and I hope to come
 up with some cool acronym later, such as:
 
-`T`inkerer's
+`T` inkerer's
 
-`U`niversal
+`U` niversal
 
-`R`otating
+`R` otating
 
-`R`obot
+`R` obot (with)
 
-(with)
+`E` ffective
 
-`E`ffective
-
-`T`echnique for cable managenemnt
+`T` echnique for cable managenemnt
   
 
 *P.S. You are very welcome to contribute to this project with better acronym.*
@@ -56,29 +54,29 @@ up with some cool acronym later, such as:
 
 ## "Napkin" inception of hollow shaft
 
-The idea started as a sleepless night, when my mind was racing for a simple solution to age-old question. 
+The idea started during a sleepless night, when my mind was racing for a simple solution to age-old question. 
 What to do with cables when things rotate? The below image is an inception of hollow shaft mechanism, which 
 would be robust yet simple to manufacture using a 3D printer, with minimum of of-the-shelf parts. 
 ![turret_cross_section](/images/blog/hobby_turret/turret_cross_section_drawing.jpg)
 
 ## Assumptions about first prototype
 Next step is to agree od dimensions and requirements, such as the hollow shaft width and necessary of-the-shelf parts.
- I have settled on 2 things: 
+I have settled on 2 things: 
 
 1. Allow myself to visit a local bearing shop and find a standardized bearing (as opposed to bushings in the "Napkin" inception)
 2. Use NEMA17 stepper motors, since they are lighter and cheaper than NEMA24 and still pack a punch
 
-The visit yielded a **bearing 6810**, a deep grove radial bearing. As I remember from my achelor studies, 
-these bearings can take a radial torque and radial pressure without any problem. The dimensions of the bearings are below:
+The visit yielded a **bearing 6810**, a deep grove radial bearing. As I remember from my bachelor studies, 
+these bearings can take a radial torque and radial pressure without any problem. The dimensions of the bearing are below:
 
 ![6810_dimensions](/images/blog/hobby_turret/6810_dimensions.jpg)
-D = 65 [mm]  \n
-d = 50 [mm]  \n
-B = 7 [mm]
+D = 65 [mm]  
+d = 50 [mm]  
+B = 7 [mm]  
 
-The NEMA17 is a ctually a family of stepper motors, but this one seems particularly well built for the task in hand,
+The NEMA17 is a ctually a family of stepper motors, but this one seems particularly well suited for the task in hand,
 the **NEMA17 42CM08** shown below, has torque of 0.8 [Nm] and can be controlled with 1.5 [A] (max 2.5 [A]), which is 
-exactly what the TMC2209 can handle without any problems. 
+exactly what the stepper motor driver TMC2209 can handle without any problems. 
 
 ![NEMA17_42CM08](/images/blog/hobby_turret/NEMA17_42CM08.png)
 
@@ -92,6 +90,30 @@ will be driven by the stepper motor.
 And this is the prototype printed from **TPU** with 0.2 [mm] layer height with 50 [%] infill. 
 
 ![solvespace_wheel_v4](/images/blog/hobby_turret/3d_print_wheel_v4.jpeg)
+
+
+## Second prototype
+
+After further investogation, I have realized that I am bound by another component, a timing belt. Another hard dicision had to be 
+done at this point about which geometry of timining belt will this design adhere to. I have settled for the timing belts used
+commonly used in 3D printers, which follow the standard **2GT**, dimensions depicted below.
+
+![2GT_3GT_belt_dimensions](/images/blog/hobby_turret/2GT_3GT_belt_dimensions.png)
+
+It is no easy feat to trasfer the dimensions into a 3D program, but after some thinking, and realizing the 3D printer I use
+add an extra 0.2[mm] to the parts (makes them chunkier), I have decided to adopt the following approximation.
+
+![2GT_timing_pulley_teeth_geometry](/images/blog/hobby_turret/2GT_timing_pulley_teeth_geometry.png)
+
+Most of the dimensions are 0.2[mm] larger, such as the **h**, **R3**. The **R2** is 0.3[mm] larger and the **b** is 0.15[mm] larger 
+(to compensate the R2). The **PLD** is without change.
+
+The diameter of the wheel is calculated as 
+
+![formula](https://render.githubusercontent.com/render/math?math=D_{wheel} = \frac{N_{tooth} \times 2}{pi})
+
+The **Ntooth** is selected to be 136.
+
 
 
 
