@@ -7,6 +7,8 @@ tags:
   - turret
 ---
 
+**updated on 2022/03/28**
+
 Hollow Shaft "Turrent" is a 3D printed, motorized mechanism for tracking in 2 or 3 axis. 
 The *hollow shaft* refers to the mechanical design of rotation, such that it takes 
 into account cable management. For instance, lets have a camera mounted on single 
