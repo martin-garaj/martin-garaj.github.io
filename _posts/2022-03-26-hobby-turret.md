@@ -7,7 +7,7 @@ tags:
   - turret
 ---
 
-**updated on 2022/03/28**
+**updated on 2022/03/29**
 
 Hollow Shaft "Turrent" is a 3D printed, motorized mechanism for tracking in 2 or 3 axis. 
 The *hollow shaft* refers to the mechanical design of rotation, such that it takes 
@@ -72,6 +72,7 @@ The visit yielded a **bearing 6810**, a deep grove radial bearing. As I remember
 these bearings can take a radial torque and radial pressure without any problem. The dimensions of the bearing are below:
 
 ![6810_dimensions](/images/blog/hobby_turret/6810_dimensions.jpg)
+
 D = 65 [mm]  
 d = 50 [mm]  
 B = 7 [mm]  
@@ -116,7 +117,14 @@ The diameter of the wheel is calculated as
 
 The **Ntooth** is selected to be 136.
 
+### Second prototype - wheel
+![prototype_v2_wheel](/images/blog/hobby_turret/prototype_v2/wheel.png)
 
+### Second prototype - base
+![prototype_v2_base](/images/blog/hobby_turret/prototype_v2/base.png)
+
+### Second prototype - top
+![prototype_v2_top](/images/blog/hobby_turret/prototype_v2/top.png)
 
 
 
