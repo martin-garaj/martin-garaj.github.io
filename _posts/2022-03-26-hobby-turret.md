@@ -7,7 +7,7 @@ tags:
   - turret
 ---
 
-**updated on 2022/03/29**
+**updated on 2022/04/14**
 
 Hollow Shaft "Turrent" is a 3D printed, motorized mechanism for tracking in 2 or 3 axis. 
 The *hollow shaft* refers to the mechanical design of rotation, such that it takes 
@@ -125,6 +125,52 @@ The **Ntooth** is selected to be 136.
 
 ### Second prototype - top
 ![prototype_v2_top](/images/blog/hobby_turret/prototype_v2/top.png)
+
+### Second prototype - assembled
+The print came in sufficient quality.
+![prototype_v2_assembled](/images/blog/hobby_turret/prototype_v2/turret_v2_prototype.png)
+
+### Second prototype - problem with flexing
+Apparently, the design is not rigid enough to withstand the pressure from the belt, 
+forcing together the axes of teh motor and the hollow shaft.
+![prototype_v2_flex](/images/blog/hobby_turret/prototype_v2/turret_v2_flex.png)
+
+## Third prototype
+To step up the game (and address the flexing) I have decided to change the design philosophy. 
+The second prototype taught me a valuable lesson about incorporating a timing belt into a mechanism.
+For this purpose, the printed tooth need to be quite precise and further, the belt requires 
+sufficient pressure to prevent slipping. 
+
+Therefore, for my third prototype, I have decided to remove the timing belt altogether and try a worm-drive
+instead. There are several reasons I have decided to do it this way:
+
+1. Worm-drive requires pressure, rahter than pulling the parts together.
+2. Worm-drive is self-locking, therefore the motor does not need to consume power when not moving.
+3. Worm-drive has better torque.
+4. There is a potential to make the worm-drive metal-to-metal (let me show you below)
+
+### Third prototype - assembly
+The design logic stay similar to the second prototype, but with motor is now installed 90 degrees 
+relative to the hollow shaft, since the worm-drive requires that.
+![prototype_v3_partial_assembly_v1](/images/blog/hobby_turret/prototype_v3/partial_assembly_v1.png)
+
+### Third prototype - wheel
+Most importantly, the wheel now addresses the **4.**-th point mentioned above, where the teeth are
+to be metal pins, rather than printed plastic.
+![prototype_v3_partial_assembly_v1](/images/blog/hobby_turret/prototype_v3/wheel_v2.png)
+
+### Third prototype - metal-to-metal
+The metal-to-metal contact is provided by the metal pins and the T8 trapezoidal theraded rod. 
+I will test 4 different diameters of the metal pins, namely 1.0, 0.9, 0.8 and 0.6 [mm]. At the moment 
+I am in favor of 0.9 and 0.8 [mm] pins, since they dont touch the trapezoidal walls of neighbouring teeths
+at once, since they hit the "inside" of the metal rod, thus causing minimal friction. 
+![metal-to-metal](/images/blog/hobby_turret/prototype_v3/metal_pins_T8_threaded_rod.jpg)
+
+
+
+
+
+
 
 
 
