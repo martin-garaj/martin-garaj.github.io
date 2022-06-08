@@ -1,13 +1,13 @@
 ---
 title: 'Hobby project: Hollow Shaft "Turret"'
 date: 2022-03-26
-permalink: /posts/2022/03/26/code/
+permalink: /posts/2022/03/26/hobby/
 tags:
   - hobby
   - turret
 ---
 
-**updated on 2022/04/14**
+**updated on 2022/06/08**
 
 Hollow Shaft "Turrent" is a 3D printed, motorized mechanism for tracking in 2 or 3 axis. 
 The *hollow shaft* refers to the mechanical design of rotation, such that it takes 
@@ -45,13 +45,13 @@ up with some cool acronym later, such as:
 - [x]  get mechanical parts (6810 bearings and M3 screws)
 - [x]  design the first prototype of the "wheel"
 - [x]  3D print the "wheel"
-- [ ]  design the base-plate which holds everything together
-- [ ]  design multi-axis mechanism 
-- [ ]  3D print everything from correct material
-- [ ]  pick proper NEMA17 stepper motors (with proper torque)
-- [ ]  get timing pulley and timing belt (preferably 10mm wide)
-- [ ]  get stepper motor drivers (based on TMC2209)
-- [ ]  get arduino with CNC shield 
+- [x]  design the base-plate which holds everything together
+- [x]  design multi-axis mechanism 
+- [x]  3D print everything from correct material
+- [x]  pick proper NEMA17 stepper motors (with proper torque)
+- [ ]  ~~get timing pulley and timing belt (preferably 10mm wide)~~ (design change)
+- [x]  get stepper motor drivers (based on TMC2209)
+- [x]  get arduino with CNC shield 
 
 
 ## "Napkin" inception of hollow shaft
@@ -165,6 +165,61 @@ I will test 4 different diameters of the metal pins, namely 1.0, 0.9, 0.8 and 0.
 I am in favor of 0.9 and 0.8 [mm] pins, since they dont touch the trapezoidal walls of neighbouring teeths
 at once, since they hit the "inside" of the metal rod, thus causing minimal friction. 
 ![metal-to-metal](/images/blog/hobby_turret/prototype_v3/metal_pins_T8_threaded_rod.jpg)
+
+
+## Fourth prototype / Revision (version 2)
+Preliminary testing of the third prototype showed there is a problem with metal-to-metal contact.
+The problem is the pins doesnt stay in the plastic wheel, but are pushed out when the worm rotates
+in one direction and are pushed into the wheel when rotating the other way. In another words,
+the friction between the plastic and the metal pins is not sufficient to ensure the transfer of 
+force from the worm to the wheel.
+
+Therefore, I have backtracked to using plastic wheel and metal worm. There arises an interesting issue 
+though. Since the wheel is relatively large, there are multiple teeth in contact with the worm,
+as the wheel rotates. This problem is hard to approximate by rotating some simple object to create a 
+thread/tooth on the wheel. 
+
+To address this **hard** (difficult to simplify) problem, I have simply rotated several worm threads
+around a material and substracted intersecting mass. A single tooth looks like this:
+
+![plastic-to-metal](/images/blog/hobby_turret/revision_4/wheel-plastic-tooth-detail.jpeg)
+
+Which is then assembled into a wheel:
+
+![plastic-wheel](/images/blog/hobby_turret/revision_4/wheel-plastic.jpeg)
+
+Which is the center-piece of the new axis-mechanism (a.k.a Revision 4, 
+since this is not a prototype anymore):
+
+![revision_4-version_2](/images/blog/hobby_turret/revision_4/version_2.jpeg)
+
+## Revision 4 (version 3)
+
+Since the axis-mechanism, a.k.a the *hollow-shaft* axis-mechanism is settled, it is time to work on
+the *turret* itself. The first iteration of arms with 2-axis looks like this:
+
+![revision_4-version_3](/images/blog/hobby_turret/revision_4/version_3.jpeg)
+
+Once printed, the arms had more flex as expected. To see whether structure can be made tougher, 
+I have asked my brother Thomas Garaj to simulate a ribbed and smooth version of the major axis-arms:
+
+![axis-arm-smooth](/images/blog/hobby_turret/revision_4/axis-arm_smooth_crop.png)
+
+and the ribbed version with the same load and the same scale:
+
+![axis-arm-ribbed](/images/blog/hobby_turret/revision_4/axis-arm_ribbed_crop.png)
+
+The results show the ribs can decrease the flexing by up to 50%.
+
+## Revision 4 (version 4)
+
+This version is under print at the moment. If no major setbacks are found, this should be considered 
+the final working prototype, officialy being released as Turret v1.0!
+
+![revision_4-version_2](/images/blog/hobby_turret/revision_4/version_4.jpeg)
+
+
+
 
 
 
