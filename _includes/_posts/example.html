@@ -1,0 +1,117 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vis-network@latest/dist/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 1000px;
+            height: 1000px;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "#fda51d", "group": 1, "id": 0, "label": "\u6837", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 1, "label": "\u53f3", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 2, "label": "\u5143", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 3, "label": "\u8fdc", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 4, "label": "\u6708", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 5, "label": "\u518d", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 6, "label": "\u65e9", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 7, "label": "\u600e", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 8, "label": "\u627e", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 9, "label": "\u8fd9", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 10, "label": "\u7740", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 11, "label": "\u6b63", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 12, "label": "\u77e5", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 13, "label": "\u9053", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 14, "label": "\u4e2d", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 15, "label": "\u91cd", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 16, "label": "\u51c6", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 17, "label": "\u5907", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 18, "label": "\u684c", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 19, "label": "\u8d70", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 20, "label": "\u6700", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 21, "label": "\u6628", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 22, "label": "\u5de6", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#fda51d", "group": 1, "id": 23, "label": "\u505a", "labelHighlightBold": true, "level": 1, "shape": "box", "x": 100}, {"color": "#2f8288", "group": 2, "id": 24, "label": "\u554a", "labelHighlightBold": true, "level": 2, "shape": "box", "x": 200}, {"color": "#2f8288", "group": 2, "id": 25, "label": "\u60c5", "labelHighlightBold": true, "level": 2, "shape": "box", "x": 200}, {"color": "#2f8288", "group": 2, "id": 26, "label": "\u5b89", "labelHighlightBold": true, "level": 2, "shape": "box", "x": 200}, {"color": "#2f8288", "group": 2, "id": 27, "label": "\u9759", "labelHighlightBold": true, "level": 2, "shape": "box", "x": 200}, {"color": "#2f8288", "group": 2, "id": 28, "label": "\u5168", "labelHighlightBold": true, "level": 2, "shape": "box", "x": 200}, {"color": "#2f8288", "group": 2, "id": 29, "label": "\u8272", "labelHighlightBold": true, "level": 2, "shape": "box", "x": 200}, {"color": "#2f8288", "group": 2, "id": 30, "label": "\u957f", "labelHighlightBold": true, "level": 2, "shape": "box", "x": 200}, {"color": "#2f8288", "group": 2, "id": 31, "label": "\u529e", "labelHighlightBold": true, "level": 2, "shape": "box", "x": 200}, {"color": "#2f8288", "group": 2, "id": 32, "label": "\u6cd5", "labelHighlightBold": true, "level": 2, "shape": "box", "x": 200}, {"color": "#2f8288", "group": 2, "id": 33, "label": "\u516c", "labelHighlightBold": true, "level": 2, "shape": "box", "x": 200}, {"color": "#2f8288", "group": 2, "id": 34, "label": "\u5ba4", "labelHighlightBold": true, "level": 2, "shape": "box", "x": 200}, {"color": "#2f8288", "group": 2, "id": 35, "label": "\u591c", "labelHighlightBold": true, "level": 2, "shape": "box", "x": 200}, {"color": "#2f8288", "group": 2, "id": 36, "label": "\u52a9", "labelHighlightBold": true, "level": 2, "shape": "box", "x": 200}, {"color": "#2f8288", "group": 2, "id": 37, "label": "\u9971", "labelHighlightBold": true, "level": 2, "shape": "box", "x": 200}, {"color": "#2f8288", "group": 2, "id": 38, "label": "\u62a5", "labelHighlightBold": true, "level": 2, "shape": "box", "x": 200}, {"color": "#2f8288", "group": 2, "id": 39, "label": "\u7eb8", "labelHighlightBold": true, "level": 2, "shape": "box", "x": 200}]);
+        edges = new vis.DataSet([{"from": 1, "title": "\u53e3", "to": 12}, {"from": 1, "title": "\u53e3", "to": 14}, {"from": 1, "title": "\u53e3", "to": 24}, {"from": 12, "title": "\u53e3", "to": 14}, {"from": 12, "title": "\u53e3", "to": 24}, {"from": 14, "title": "\u53e3", "to": 24}, {"from": 2, "title": "\u4e00", "to": 5}, {"from": 2, "title": "\u4e00", "to": 11}, {"from": 5, "title": "\u4e00", "to": 11}, {"from": 31, "title": "\u529b", "to": 36}, {"from": 3, "title": "\u8fb6", "to": 9}, {"from": 3, "title": "\u8fb6", "to": 13}, {"from": 9, "title": "\u8fb6", "to": 13}, {"from": 26, "title": "\u5b80", "to": 34}, {"from": 0, "title": "\u7f8a", "to": 10}, {"from": 8, "title": "\u624c", "to": 38}, {"from": 6, "title": "\u65e5", "to": 20}, {"from": 6, "title": "\u65e5", "to": 21}, {"from": 20, "title": "\u65e5", "to": 21}, {"from": 7, "title": "\u4e4d", "to": 21}, {"from": 23, "title": "\u4ebb", "to": 35}, {"from": 31, "title": "\u516b", "to": 33}, {"from": 1, "title": "\ud840\udc87", "to": 22}, {"from": 17, "title": "\u5902", "to": 35}, {"from": 25, "title": "\u9752", "to": 27}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "forceAtlas2Based": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.1,
+            "damping": 0.4,
+            "gravitationalConstant": -50,
+            "springConstant": 0.08,
+            "springLength": 30
+        },
+        "solver": "forceAtlas2Based",
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
