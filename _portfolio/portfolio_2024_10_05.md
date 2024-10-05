@@ -1,8 +1,8 @@
 ---
-title: "Skew Normal Distribution"
-link: 'https://github.com/martin-garaj/statistics_lib'
-image: 'https://github.com/martin-garaj/statistics_lib/raw/main/graphics/tutorial_3_normal_skew_distr.png'
-excerpt: "Python library devoted to studying Skew Normal Distribution including sampling, parameter fitting and differentiation."
+title: "Multi-agent discourse visualisation tool"
+link: 'https://github.com/martin-garaj/llm_logger'
+image: 'https://github.com/martin-garaj/llm_logger/raw/develop/docs/images/ui.png'
+excerpt: "LLM logger is a logger & visualisation tool for LLM though process such as Chain-of-though, Tree-of-thought, etc."
 collection: portfolio
 ---
 
