@@ -6,7 +6,7 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-[Full CV available on Linked-in](https://www.linkedin.com/in/martin-garaj/)
+[Linked-in profile](https://www.linkedin.com/in/martin-garaj/)
 
 {% include base_path %}
 
@@ -29,12 +29,12 @@ Exploration (DSE) of Power, Performance, Area (PPA) for CPU architecture optimiz
 * 2021: Data Scientist
   * SolarGIS
   * Goal: Detection of anomalies related to 1-axis and 2-axis trackers from irradiation data.
-  
+
 * 2017: Research Assistant
   * City University of Hong Kong
   * Goal: Acceleration of heuristic search algorithms using FPGA-SoC platform.
 
-  
+
 Skills
 ======
 * strong background in mechanics, electroncis, programming and data science
@@ -47,8 +47,8 @@ Publications
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-  
+
+
 Service and leadership
 ======
 * Board-game session organizer
@@ -56,3 +56,9 @@ Service and leadership
 * Mentor and Group leader in Nexteria
 * CyberPort Business competition
 * Hackatons
+
+
+Hobbies
+======
+* [3D printing](https://martin-garaj.github.io/posts/2024/10/05/hobby/)
+* Swing dancing
